@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To Do List</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="mobile.css" media="screen and (max-width: 600px)">
 </head>
+
 <body>
   <main>
     <header>
@@ -17,19 +20,16 @@
       </div>
     </header>
     <section class="input-container">
-      <input
-        id="texto-tarefa"
-        type="text"
-        placeholder="Escreva a tarefa >">
+      <input id="texto-tarefa" type="text" placeholder="Escreva a tarefa >">
     </section>
     <section class="btn-container list-display">
-        <button id="criar-tarefa" class="btn-width">Adicionar</button>
-        <button id="mover-cima" class="btnMove-container">Mover p/ cima</button>
-        <button id="mover-baixo" class="btnMove-container">Mover p/ baixo</button>
-        <button id="salvar-tarefas">Salvar lista</button>
-        <button id="apaga-tudo">Apagar Lista</button>
-        <button id="remover-selecionado">Remover Item</button>
-        <button id="remover-finalizados">Remover Completas</button>
+      <button id="criar-tarefa" class="btn-width">Adicionar</button>
+      <button id="mover-cima" class="btnMove-container">Mover p/ cima</button>
+      <button id="mover-baixo" class="btnMove-container">Mover p/ baixo</button>
+      <button id="salvar-tarefas">Salvar lista</button>
+      <button id="apaga-tudo">Apagar Lista</button>
+      <button id="remover-selecionado">Remover Item</button>
+      <button id="remover-finalizados">Remover Completas</button>
     </section>
     <section class="list-container list-display">
       <ol id="lista-tarefas"></ol>
@@ -37,4 +37,5 @@
   </main>
   <script src="script.js"></script>
 </body>
+
 </html>
